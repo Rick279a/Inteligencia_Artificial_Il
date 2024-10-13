@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistente de Escrita</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Assistente de Escrita</h1>
+        <div class="input-section">
+            <textarea id="inputText" placeholder="Digite seu texto aqui..."></textarea>
+            <div class="actions">
+                <select id="actionSelect">
+                    <option value="gerar-texto">Geração de Texto</option>
+                    <option value="resumir-texto">Resumo</option>
+                </select>
+                <button id="executeActionButton">Executar</button>
+            </div>
+        </div>
+
+        <h2>Resultado:</h2>
+        <div id="result" class="result-box"></div>
+
+        <h2>Histórico de Consultas</h2>
+        <ul id="historyList" class="history-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
